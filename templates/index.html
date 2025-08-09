@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Price Prediction</h1>
+        <form method="POST">
+            <label for="ticker">Enter Stock Ticker (e.g., AAPL):</label>
+            <input type="text" id="ticker" name="ticker" required>
+            <button type="submit">Predict</button>
+        </form>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        {% if prediction %}
+            <h2>Predicted Prices for Next 5 Days:</h2>
+            <ul>
+                {% for price in prediction %}
+                    <li>Day {{ loop.index }}: ${{ price }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
