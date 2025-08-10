@@ -126,10 +126,12 @@ Web App: Test at http://127.0.0.1:5001 with valid tickers (e.g., AAPL, MSFT) and
 ## Contributing
 Contributions are welcome! Please:
 
- Fork the repository.
+ ## Fork the repository.
+ ```
 Create a feature branch (git checkout -b feature/your-feature).
 Commit changes (git commit -m "Add your feature").
 Push to the branch (git push origin feature/your-feature).
 Open a pull request.
+```
 
 
