@@ -22,28 +22,36 @@ HTML/CSS: Frontend interface
 ## Installation
 
 Clone the Repository:
-git clone https://github.com/your-username/stock-price-app.git
-cd stock-price-app
+```bash 
+git clone https://github.com/Hayat373/StockPricePrediction.git
+cd StockPricePrediction
+```
 
 
 Set Up a Virtual Environment:
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 
 Install Dependencies:
+```bash
 pip install -r requirements.txt
+```
 
 
 Run the App:
+```bash
 python app.py
+```
 
 
 Access the app at http://127.0.0.1:5001.
 
 
 
-Usage
+## Usage
 
 Open http://127.0.0.1:5001 in your browser.
 
@@ -59,17 +67,14 @@ Predicted Prices for Next 5 Days:
 - Day 4: $232.XX
 - Day 5: $231.XX
 
-Note: Actual predictions vary based on the LSTM model’s training.
-
-Error Handling:
-
-Invalid ticker (e.g., ZZZZ): "Failed to fetch data for ZZZZ: No data found, symbol may be delisted."
-Insufficient data: "Not enough data for [ticker]. At least 60 days of data required."
 
 
 
-File Structure
-stock_price_app/
+
+
+## File Structure
+
+StockPricePrediction/
 ├── app.py              # Flask app and main logic
 ├── data.py             # Data fetching and preprocessing
 ├── model.py            # LSTM model training and prediction
@@ -80,7 +85,7 @@ stock_price_app/
 │   └── index.html      # HTML template for the UI
 └── .gitignore          # Git ignore file for excluding venv/, __pycache__/, etc.
 
-Dependencies
+## Dependencies
 See requirements.txt for the full list. Key dependencies include:
 
 Flask==2.3.2
