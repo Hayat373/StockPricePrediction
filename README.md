@@ -1,4 +1,4 @@
-## Stock Price Prediction Web App
+# Stock Price Prediction Web App
 A web-based application for predicting future stock prices using historical data and a Long Short-Term Memory (LSTM) neural network. Built with Python, Flask, Pandas, and TensorFlow, this app allows users to input a stock ticker (e.g., AAPL) and receive predicted closing prices for the next 5 days. The app fetches real-time stock data from Yahoo Finance using the yfinance library, preprocesses it with Pandas, trains an LSTM model, and displays predictions via a Flask web interface.
 
 ## Features
@@ -9,7 +9,7 @@ Web Interface: Simple Flask-based UI for entering stock tickers and viewing pred
 Error Handling: Robust handling for invalid tickers (e.g., ZZZZ) and insufficient data (less than 60 days).
 Modular Design: Organized code structure with separate modules for data fetching (data.py), model training (model.py), and web serving (app.py).
 
-Tech Stack
+## Tech Stack
 
 Python: 3.x
 Flask: Web framework for the user interface
@@ -19,7 +19,7 @@ yfinance: API for fetching stock data
 scikit-learn: Data scaling
 HTML/CSS: Frontend interface
 
-Installation
+## Installation
 
 Clone the Repository:
 git clone https://github.com/your-username/stock-price-app.git
