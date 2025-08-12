@@ -19,6 +19,8 @@ yfinance: API for fetching stock data
 scikit-learn: Data scaling
 HTML/CSS: Frontend interface
 
+
+
 ## Installation
 
 Clone the Repository:
