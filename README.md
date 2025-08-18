@@ -3,6 +3,7 @@ A web-based application for predicting future stock prices using historical data
 
 ## Features
 
+
 Real-Time Data: Fetches historical stock data (e.g., 1 year of closing prices) from Yahoo Finance using yfinance.
 LSTM Model: Uses TensorFlow to train a deep learning model for time-series stock price prediction.
 Web Interface: Simple Flask-based UI for entering stock tickers and viewing predictions.
