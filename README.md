@@ -12,6 +12,7 @@ Modular Design: Organized code structure with separate modules for data fetching
 
 ## Tech Stack
 
+
 Python: 3.x
 Flask: Web framework for the user interface
 Pandas: Data preprocessing and manipulation
